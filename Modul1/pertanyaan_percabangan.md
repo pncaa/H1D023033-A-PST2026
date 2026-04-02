@@ -1,28 +1,20 @@
-# 📘 README Percobaan 1A - Percabangan (Arduino)
+#  Percabangan (Arduino)
 
-## 👤 Identitas
-- Nama: Panca Aziz Saputra
-- NIM: H1D023033
-- Mata Kuliah: Sistem Tertanam dan Mikrokontroler
-- Modul: Modul I - Percabangan dan Perulangan
-
----
-
-## 🎯 Tujuan Percobaan
+## Tujuan Percobaan
 - Memahami konsep percabangan `if-else`
 - Mengontrol LED berdasarkan kondisi tertentu
 - Menghubungkan logika program dengan output fisik (LED)
 
 ---
 
-## 🔌 Rangkaian
+## Rangkaian
 - LED terhubung ke pin **6** Arduino
 - Resistor 220Ω sebagai pembatas arus
 - Kaki negatif LED terhubung ke **GND**
 
 ---
 
-## 💻 Source Code
+## Source Code
 ```cpp
 const int ledPin = 6;   // Pin LED
 int timeDelay = 1000;   // Delay awal (lambat)
@@ -50,7 +42,7 @@ void loop() {
 
 ---
 
-## 🧠 Penjelasan Kode
+## Penjelasan Kode
 - `ledPin` → menentukan pin yang digunakan LED
 - `timeDelay` → mengatur kecepatan kedip LED
 - `pinMode()` → mengatur pin sebagai output
@@ -58,13 +50,13 @@ void loop() {
 - `digitalWrite(LOW)` → LED mati
 - `delay()` → memberikan jeda waktu
 
-### 🔀 Percabangan
+### Percabangan
 - Jika `timeDelay <= 100` → LED reset ke lambat
 - Jika tidak → LED semakin cepat
 
 ---
 
-## 🔍 Analisis Hasil
+## Analisis Hasil
 - LED awalnya berkedip lambat
 - Semakin lama semakin cepat
 - Setelah mencapai batas tertentu → kembali lambat
@@ -72,7 +64,7 @@ void loop() {
 
 ---
 
-## ❓ Jawaban Pertanyaan
+## Jawaban Pertanyaan
 
 ### 1. Kapan masuk blok `if`?
 Saat `timeDelay <= 100`
@@ -113,16 +105,9 @@ void loop() {
 
 ---
 
-## 📌 Kesimpulan
+## Kesimpulan
 - Percabangan `if-else` digunakan untuk mengatur perubahan kondisi LED
 - Program dapat mengontrol kecepatan LED secara dinamis
 - Logika sederhana dapat menghasilkan perilaku sistem yang kompleks
 
----
-
-## 🚀 Repository
-Upload ke GitHub dengan format:
-```
-Modul1 - Percobaan1A - Panca - H1D023033
-```
 
