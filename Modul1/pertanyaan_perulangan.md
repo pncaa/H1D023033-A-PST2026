@@ -1,21 +1,14 @@
-# 📘 README Percobaan 2A - Perulangan (Arduino)
+# Perulangan (Arduino)
 
-## 👤 Identitas
-- Nama: Panca Aziz Saputra
-- NIM: H1D023033
-- Mata Kuliah: Sistem Tertanam dan Mikrokontroler
-- Modul: Modul I - Percabangan dan Perulangan
 
----
-
-## 🎯 Tujuan Percobaan
+## Tujuan Percobaan
 - Memahami konsep perulangan `for`
 - Mengontrol LED secara berurutan
 - Membuat efek LED running (berjalan)
 
 ---
 
-## 🔌 Rangkaian
+## Rangkaian
 Konfigurasi LED:
 - LED 1 → Pin 2
 - LED 2 → Pin 3
@@ -25,9 +18,11 @@ Konfigurasi LED:
 - LED 6 → Pin 7
 - Semua LED → resistor → GND
 
+![Rangkaian arduino](SCHEMA.jpg)
+
 ---
 
-## 💻 Source Code
+## Source Code
 ```cpp
 int timer = 100; // delay
 
@@ -56,7 +51,7 @@ void loop() {
 
 ---
 
-## 🧠 Penjelasan Kode
+## Penjelasan Kode
 - `timer` → mengatur kecepatan LED
 - `for` pertama → menghidupkan LED dari kiri ke kanan
 - `for` kedua → menghidupkan LED dari kanan ke kiri
@@ -65,7 +60,7 @@ void loop() {
 
 ---
 
-## 🔍 Analisis Hasil
+## Analisis Hasil
 - LED menyala berurutan dari kiri ke kanan
 - Setelah LED terakhir → arah berubah ke kanan ke kiri
 - Pola berjalan terus menerus
@@ -73,11 +68,11 @@ void loop() {
 
 ---
 
-## ❓ Jawaban Pertanyaan
+## Jawaban Pertanyaan
 
 ### 1. Gambaran Rangkaian
 LED disusun berurutan pada breadboard, masing-masing terhubung ke pin digital Arduino (2–7) dan ke GND melalui resistor.
-
+![Rangkaian arduino](SCHEMA.jpg)
 ### 2. LED kiri ke kanan
 Menggunakan loop:
 ```cpp
@@ -125,16 +120,9 @@ void loop() {
 
 ---
 
-## 📌 Kesimpulan
+## Kesimpulan
 - Perulangan `for` mempermudah pengendalian banyak LED
 - Program menjadi lebih efisien dan rapi
 - Efek LED running dapat dibuat dengan logika sederhana
 
----
-
-## 🚀 Repository
-Upload ke GitHub dengan format:
-```
-Modul1 - Percobaan2A - Panca - H1D023033
-```
 
